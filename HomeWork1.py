@@ -13,13 +13,31 @@
 # else:
 #     print('Нет')
 
+# day = int(input())
+# day_name = {1: 'Понедельник',
+# 2: 'Вторник',
+# 3: 'Среда',
+# 4: 'Четверг',
+# 5: 'Пятница',
+# 6: 'Суббота',
+# 7: 'Воскресенье'}
+# print(day_name.get(day, 'Такого дня недели не существует'))
+
 # Напишите программу для. проверки истинности утверждения
 # ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
-for x in (range(0, 2)):
-    for y in (range(0, 2)):
-        for z in (range(0, 2)):
-            print(not(x or y or z) == x and not y and not z)
+# for x in (True, False):
+#     for y in (True, False):
+#         for z in (True, False):
+#             some_str = (not(x or y or z) == (not x and not y and not z))
+#             print(f'x = {x} y = {y} z = {z} -> {some_str}')
+#
+# for i in range(0b111 + 1):
+# binary_string = format(i, '03b')
+# x = int(binary_string[0])
+# y = int(binary_string[1])
+# z = int(binary_string[2])
+# print(f'¬({x} ⋁ {y} ⋁ {z}) = ¬{x} ⋀ ¬{y} ⋀ ¬{z} есть {not (x or y or z) == (not x) and (not y) and (not z)}')
 
 # Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и
 # выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
@@ -77,4 +95,15 @@ for x in (range(0, 2)):
 # print('Введите координаты двух точек:')
 # x1, y1 = map(int, input().split(','))
 # x2, y2 = map(int, input().split(','))
-# print(((x2-x1)**2+(y2-y1)**2)**0.5)
+# print(round(((x2-x1)**2+(y2-y1)**2)**0.5, 3))
+
+# import math
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+# ac = y2 - y1
+# bc = x2 - x1
+# print(round((ac ** 2 + bc ** 2) ** 0.5, 2))
+# print(int(math.sqrt(ac ** 2 + bc ** 2) * 100) / 100)
+# print(str(math.sqrt(ac ** 2 + bc ** 2)).split('.')[0] + '.' + str(math.sqrt(ac ** 2 + bc ** 2)).split('.')[1][:2])
