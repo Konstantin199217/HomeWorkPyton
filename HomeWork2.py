@@ -14,6 +14,13 @@ import random
 #     sumnum += int(num2[i])
 # print(sumnum)
 
+# n = input()
+# summa = 0
+# for el in n:
+#     if el != '.':
+#         summa += int(el)
+# print(summa)
+
 # Напишите программу, которая принимает на вход число N
 # и выдает набор произведений чисел от 1 до N.
 #
@@ -34,10 +41,23 @@ import random
 # Пример:
 
 # - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
-
+#
 # n = int(input())
 # d = {n: round((1 + 1 / n) ** n, 3) for n in range(1, n + 1)}
-# print(f' Список: {d}]\n Сумма: {round(sum(d), 3)}')
+# print(f' Список: {d}\n Сумма: {sum(d)}')
+
+# n = int(input())
+# d = []
+# for x in range(1, n + 1):
+#     d.append(round((1 + 1 / x) ** x, 3))
+# print(d)
+# print(sum(d))
+
+# n = int(input())
+# summa = 0
+# for i in range(1, n + 1):
+#     summa += (1 + 1 / i) ** i
+# print(summa)
 
 # Реализуйте алгоритм перемешивания списка.
 
@@ -45,4 +65,3 @@ import random
 # print(d)
 # random.shuffle(d)
 # print(d)
-
