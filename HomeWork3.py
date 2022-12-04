@@ -16,6 +16,8 @@
 # print(num_list2)
 # print(sum(num_list2))
 
+# range(1, len(some), 2)#  range с ходом через один
+
 # Напишите программу, которая найдёт произведение пар чисел списка.
 # Парой считаем первый и последний элемент, второй и предпоследний и т.д.
 #
@@ -50,6 +52,16 @@
 # print(f'{num_list} \n{num_list2} \n Максимальное: {max(num_list2)} \n Минимальное: {min(num_list2)}')
 # print(f' Разность: {max(num_list2) - min(num_list2)}')
 
+
+# some_list=[input() for _ in range(int(input()))]
+# minn = 1
+# maxx = 0
+# for el in some_list:
+#     if '.' in el:
+#         if float('0.' + el.split('.')[1]):
+#             maxx = float('0.' + el.split('.')[1])
+# print(maxx - minn)
+
 # Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 #
 # Пример:
@@ -59,11 +71,13 @@
 # - 2 -> 10
 
 # num = int(input())
+# print(bin(num))
 # lin = ''
 # while num > 0:
 #     lin = str(num % 2) + lin
 #     num = num // 2
 # print(lin)
+
 #
 # Задайте число. Составьте список чисел Фибоначчи,
 # в том числе для отрицательных индексов.
@@ -72,3 +86,11 @@
 #
 # - для k = 8 список будет выглядеть так:
 # [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+# k = int(input())
+# some_list = [0] * (2 * k - 1)
+# some_list[k + 1] = 1
+# for i in range(k + 2, 2 * k + 1):
+#      some_list[i] = some_list[i - 1] + some_list[i - 2]
+# for i in range(k - 1, -1, -1):
+#     some_list[i] = some_list[i + 2] - some_list[i + 1]
+# print(some_list)
