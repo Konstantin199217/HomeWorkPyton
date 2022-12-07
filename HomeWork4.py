@@ -35,8 +35,19 @@
 #    if a.count(i) == 1:
 #        unik.append(i)
 # print(unik)
-
-
+#
+# number_set = set()
+# out_list = []
+# some_list = list(map(int, input().split()))
+# for ind in range(0, len(some_list)):
+#     if some_list[ind] not in number_set:
+#         number_set.add(some_list[ind])
+#         for ind1 in range(ind + 1, len(some_list)):
+#             if some_list[ind] == some_list[ind1]:
+#                 break
+#             else:
+#                 out_list.append(some_list[ind])
+# print(out_list)
 
 
 # Не судите строго))
@@ -69,42 +80,43 @@ import random
 
 
 # Даны два файла, в каждом из которых находится запись многочлена.
-# Задача - сформировать файл, содержащий сумму многочленов.
-a = 2
-x = sympy.Symbol('x')
-l = [random.randint(0, 100) for _ in range(7)]
-f = int(random.randint(1, 4))
-g = 0
-if f == 1:
-    g = l[0] * x ** a
-if f == 2:
-    g = l[0] * x ** a + l[1] * x
-if f == 3:
-    g = l[0] * x ** a + l[1] * x - l[2]
-with open('File1.txt', 'w', encoding='utf-8') as file:
-    file.write(f'{g}' + '\n')
-r = int(random.randint(1, 4))
-z = 0
-if r == 1:
-    z = l[3] * x ** a
-if r == 2:
-    z = l[3] * x ** a + l[4] * x
-if r == 3:
-    z = l[3] * x ** a + l[4] * x - l[5]
-with open('File2.txt', 'w', encoding='utf-8') as file:
-    file.write(f'{z}' + '\n')
-
-with open('File1.txt', 'r', encoding='utf-8') as file:
-    file.seek(0, 0)
-    y = file.read().splitlines()
-
-with open('File2.txt', 'r', encoding='utf-8') as file:
-    file.seek(0, 0)
-    y2 = file.read().splitlines()
-
-print(y, y2)
-ot = sympy.solve(y + y2)
-with open('File.txt', 'w', encoding='utf-8') as file:
-    file.seek(0, 0)
-    file.write(f'{ot}')
-print(ot)
+# # Задача - сформировать файл, содержащий сумму многочленов.
+# a = 2
+# x = sympy.Symbol('x')
+# l = [random.randint(0, 100) for _ in range(7)]
+# f = int(random.randint(1, 4))
+# g = 0
+# if f == 1:
+#     g = l[0] * x ** a
+# if f == 2:
+#     g = l[0] * x ** a + l[1] * x
+# if f == 3:
+#     g = l[0] * x ** a + l[1] * x - l[2]
+# with open('File1.txt', 'w', encoding='utf-8') as file:
+#     file.write(f'{g}' + '\n')
+# r = int(random.randint(1, 4))
+# z = 0
+# if r == 1:
+#     z = l[3] * x ** a
+# if r == 2:
+#     z = l[3] * x ** a + l[4] * x
+# if r == 3:
+#     z = l[3] * x ** a + l[4] * x - l[5]
+# with open('File2.txt', 'w', encoding='utf-8') as file:
+#     file.write(f'{z}' + '\n')
+#
+# with open('File1.txt', 'r', encoding='utf-8') as file:
+#     file.seek(0, 0)
+#     y = file.read().splitlines()
+#
+# with open('File2.txt', 'r', encoding='utf-8') as file:
+#     file.seek(0, 0)
+#     y2 = file.read().splitlines()
+#
+# print(y, y2)
+# ot = sympy.solve(y + y2)
+# with open('File.txt', 'w', encoding='utf-8') as file:
+#     file.seek(0, 0)
+#     file.write(f'{ot}')
+# print(ot)
+# Не очень получилось доп задание.
