@@ -1,3 +1,4 @@
+
 import random
 
 b_list = list(range(1, 10))
