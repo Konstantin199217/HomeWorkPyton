@@ -10,7 +10,11 @@ def exp(strr):
             elif strr in row:
                 print(f'{row[0]}.{row[1]}.{row[2]}.{row[3]}')
             count += 1
-
+def exp_txt(strr):
+    with open("text.txt", 'r', encoding='utf-8') as f:
+        for line in f:
+            if strr in line:
+                print(line)
 
 
 

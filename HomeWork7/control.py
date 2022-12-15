@@ -7,7 +7,9 @@ def button():
 
     if num == 1:
         nam = list(input('Введите данные через точку Фамилия.Имя.Номер_телефона.Описание: ').split('.'))
-        impo.imp(nam)
+        impo.imp_txt(nam)
+        # impo.imp(nam)
     if num == 2:
         nam2 = input('Введите Фамилию Имя или Телефон: ')
-        export.exp(nam2)
+        export.exp_txt(nam2)
+        # export.exp(nam2)
