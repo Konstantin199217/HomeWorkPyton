@@ -98,20 +98,22 @@
 #                         res.write(int(count) * letter)
 #                     else:
 #                         res.write(letter)
+# #                     count = ''
+# def depress(file, result):
+#     with open(file, 'r', encoding='utf-8') as text:
+#         with open(result, 'w', encoding='utf-8') as res:
+#             inp_str = text.readline()
+#             count = ''
+#             for letter in inp_str:
+#                 if letter.isdigit():
+#                     count += letter
+#                 else:
+#                     if not count:
+#                         res.write(int(count) * letter)
+#                     else:
+#                         res.write(letter)
 #                     count = ''
-def depress(file, result):
-    with open(file, 'r', encoding='utf-8') as text:
-        with open(result, 'w', encoding='utf-8') as res:
-            inp_str = text.readline()
-            count = ''
-            for letter in inp_str:
-                if letter.isdigit():
-                    count += letter
-                else:
-                    if not count:
-                        res.write(int(count) * letter)
-                    else:
-                        res.write(letter)
-                    count = ''
-
-depress('result.txt', 'result2.txt')
+#
+# depress('result.txt', 'result2.txt')
+num = {input().split('.')}
+print(num)
